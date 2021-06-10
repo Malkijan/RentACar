@@ -3,8 +3,10 @@ Araba Kiralama Projesi Backend
 
 
 ## Proje Hakkında <br/>
-N-Katmanlı mimari kullanılıarak hazırlanan bu projede Entity Framework'ü kullandık.
-Aspect Oriented Programming'in nimetlerinden yararlanarak methodlarımızı spageti koddan uzak bir şekilde tertemiz ele aldık. Bunlardan başlıcaları Caching, Validation, Transaction, Performance ve Logging kullandık.
+**N-Katmanlı** mimari kullanılıarak hazırlanan bu projede **Solid** presiplerine uygun bir şekilde dizayn edildi. Özellikle katmanlar arası bağımlılıklar **loose coupling** ilkesini baz
+alarak gerçekleştirildiğinden ileride olası bir teknoloji değişikliği için bizlere çok büyük bir rahatlık sağlamaktadır. Yeni teknolojimizi ekleyip sadece configlerimizi
+değiştirmemiz yeterli olmaktadır. Veri katmanımızla haberleşmek için **Entity Framework**'u kullanırken, bağımlılıkları çözmek için **Autofac**'den yararlandık.
+**Aspect Oriented Programming**'in nimetlerinden yararlanarak methodlarımızı spagetti kodlardan uzak bir şekilde tertemiz ele aldık. Bunlardan başlıcaları **Caching**, **Validation**, **Transaction**, **Performance** ve **Logging** kullandık.
 Kullanıcıların register ve login olabileceği bir altyapıyı kurarak, JWT teknikleri ile Token yapısını kurduk.
 
 ## Katmanlar
