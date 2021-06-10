@@ -10,14 +10,7 @@ using Entities.Concrete;
 
 namespace DataAccess.Concrete.EntityFramework
 {
-    public class EfCarImageDal : EfEntityRepositoryBase<CarImage, RentACarContext>, ICarImageDal
+    public class EfCreditCardDal:EfEntityRepositoryBase<CreditCard,RentACarContext>,ICreditCardDal
     {
-        public bool IsExists(int id)
-        {
-            using (RentACarContext context = new RentACarContext())
-            {
-                return context.CarImages.Any(p => p.Id == id);
-            }
-        }
     }
 }

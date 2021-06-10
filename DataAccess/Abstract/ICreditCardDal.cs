@@ -8,8 +8,7 @@ using Entities.Concrete;
 
 namespace DataAccess.Abstract
 {
-    public interface ICarImageDal:IEntityRepository<CarImage>
+    public interface ICreditCardDal:IEntityRepository<CreditCard>
     {
-        bool IsExists(int id);
     }
 }

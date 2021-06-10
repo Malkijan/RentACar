@@ -71,6 +71,9 @@ namespace Business.Constants
         public static string CarImageUpdated="Araba görseli güncellendi.";
         public static string CarImageDeleted = "Araba görseli başarıyla silindi.";
         public static string CheckIfImageLimitExceeded = "Araba için maksimum 5 görsel olabilir.";
+        public static string[] CarImageValidationFileTypes = {".JPG",".JPEG",".PNG",".TIF",".TIFF",".GIF",".BMP",".ICO"};
+        public static string CarImageExtensionInvalid = "Geçersiz bir dosya uzantısı, fotoğraf için uygun uzantılar" + string.Join(",",CarImageValidationFileTypes);
+        public static string CarImageNotExists = "Böyle bir resim bulunamadı.";
 
 
         #endregion
@@ -98,6 +101,16 @@ namespace Business.Constants
         public static string UserAlreadyExists = "Kullanıcı mevcut!";
         public static string AccessTokenCreated = "Kullanıcı için Token oluşturuldu.";
         public static string AuthorizationDenied = "Kullanıcının yetkisi yok!";
+
+
+        #endregion
+
+        #region CreditCards
+
+        public static string CreditCardAdded = "Kredi kartı başarıyla eklendi.";
+        public static string CreditCardDeleted = "Kredi kartı başarıyla silindi.";
+        public static string CreditCardUpdated = "Kredi kartı bilgileri başarıyla güncellendi.";
+        public static string CreditCardListed = "Kredi kartı listelendi.";
 
         #endregion
     }
