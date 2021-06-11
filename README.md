@@ -1,8 +1,9 @@
 # Rent A Car
 Araba Kiralama Projesi Backend
 
+<br><p align="center"><img width="75%" src="https://i.ibb.co/Dbwxd8Y/Rent-ACar-Banner.png"></p>
 
-## Proje Hakkında <br/>
+## :pushpin:Proje Hakkında <br/>
 **N-Katmanlı** mimari kullanılıarak hazırlanan bu projede **Solid** presiplerine uygun bir şekilde dizayn edildi. Özellikle katmanlar arası bağımlılıklar **loose coupling** ilkesini baz
 alarak gerçekleştirildiğinden ileride olası bir teknoloji değişikliği için bizlere çok büyük bir rahatlık sağlamaktadır. Yeni teknolojimizi ekleyip sadece configlerimizi
 değiştirmemiz yeterli olmaktadır. Veri katmanımızla haberleşmek için **Entity Framework**'u kullanırken, bağımlılıkları çözmek için **Autofac**'den yararlandık.
@@ -19,9 +20,12 @@ Kullanıcıların register ve login olabileceği bir altyapıyı kurarak, JWT te
 [![Autofac](https://img.shields.io/badge/Autofac-004880?style=for-the-badge&logo=nuget&logoColor=white)](https://autofac.org/)
 [![Fluent-Validation](https://img.shields.io/badge/Fluent%20Validation-004880?style=for-the-badge&logo=nuget&logoColor=white)](https://fluentvalidation.net/)
 
-## Katmanlar
+## :books:Katmanlar
+
+<br><p align="center"><img width="75%" src="https://i.ibb.co/xH5jqWq/Core-Banner.png"></p><br/>
 
 ### Core Katmanı <br/>
+
 * Entitylerimizi ve Dtolarımızı bir interface yardımı ile kontrol altına aldık.
 * Tüm proje boyunca bizlere yardımcı olacak (IoC, Message, Result, Security) gibi classlarımızı buraya ekledik.
 * ServiceCollection ve User Claimlerimiz için extensionlar yazdık.
@@ -29,14 +33,20 @@ Kullanıcıların register ve login olabileceği bir altyapıyı kurarak, JWT te
 * Projemizi dikine kesen CrossCuttingConcernlerimizi buraya ekledik.
 * Autofac yardımı ile kullandığımız AOP aspectlerimizi buraya ekledik.
 
+<br><p align="center"><img width="75%" src="https://i.ibb.co/3MwL4gc/Entities-Banner.png"></p><br/>
+
 ### Entities Katmanı <br/>
 * Projemizde kullandığımız veritabanı tablolarını Concrete klasörü altında topladık.
 * Birbiriyle ilişkili olan tablolarımızı ise Dtos altında ihtiyacımıza göre oluşturduk.
+
+<br><p align="center"><img width="75%" src="https://i.ibb.co/VLm3ZGD/Data-Access-Banner.png"></p><br/>
 
 ### DataAccess Katmanı <br/>
 * Veritabanı ile direk ilişkisi olan bu katmanımız için sadece veritabanına ait işlemler yapıldı.
 * CRUD işlemlerimiz direk Core üzerinden geldiği için burada classlarımıza EntityFramework için oluşturudğumuz Repositoryleri kullandık.
 * Ana işlemlerimiz dışında ilişkili olan tablolarımıza ait özel sorgularımızı ise buradaki classlarımıza ekledik.
+
+<br><p align="center"><img width="75%" src="https://i.ibb.co/vdnqPgQ/Business-Banner.png"></p><br/>
 
 ### Business Katmanı <br/>
 * DataAccess katmanına işlemlerimizi göndermeden önce tüm operasyonumuzu bu katmanda dönecek şekilde organize ettik.
