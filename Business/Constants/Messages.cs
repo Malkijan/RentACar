@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Core.Entities.Concrete;
+using Entities.Concrete;
 
 namespace Business.Constants
 {
@@ -22,6 +23,7 @@ namespace Business.Constants
         public static string CarDeleted = "Araba başarıyla silindi.";
         
         public static string CarDailyPriceInvalid = "Araba için günlük fiyat hatalı!";
+        public static string CarDescriptionError = "Arabaya ait açıklama yetersiz.";
 
 
         #endregion
@@ -40,6 +42,8 @@ namespace Business.Constants
         public static string CustomerUpdated = "Müşteri bilgileri güncellendi.";
         public static string CustomerDeleted = "Müşteri sistemden silindi.";
         public static string CustomersListed = "Müşteriler listelendi.";
+        public static string CustomerCompanyNameNotEmpty = "Lütfen bir şirket adı giriniz.";
+        public static string CustomerCompanyNameInvalid = "Hatalı bir şirket ismi girdiniz.";
 
 
         #endregion
@@ -101,6 +105,8 @@ namespace Business.Constants
         public static string UserAlreadyExists = "Kullanıcı mevcut!";
         public static string AccessTokenCreated = "Kullanıcı için Token oluşturuldu.";
         public static string AuthorizationDenied = "Kullanıcının yetkisi yok!";
+        public static string UserNameError = "Hatalı veya eksik bir bilgi girişi yaptınız!";
+        public static string UserEmailInvalid = "Hatalı veya eksik bir posta adresi girdiniz!";
 
 
         #endregion
@@ -111,6 +117,18 @@ namespace Business.Constants
         public static string CreditCardDeleted = "Kredi kartı başarıyla silindi.";
         public static string CreditCardUpdated = "Kredi kartı bilgileri başarıyla güncellendi.";
         public static string CreditCardListed = "Kredi kartı listelendi.";
+        public static string CreditCardNameLimitReached = "Kredi Kartı için isim karakter limiti aşıldı.";
+        public static string CreditCardNumberInvalid = "Kredi Kartı için girilen numaranız hatalı!";
+        public static string CreditCardCVVNumberInvalid = "Kredi Kartınızın güvenlik kodu 3 hane olmalıdır.";
+
+
+        #endregion
+
+        #region Findeks
+
+        public static string FindeksAdded = "Findeks değeri sisteme eklendi.";
+        public static string FindeksAlreadyExists = "Kullanıcının findeks değeri mevcutdur.";
+        public static string FindeksListed = "Findeks değerleri listelendi.";
 
         #endregion
     }
